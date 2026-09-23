@@ -23,7 +23,7 @@ O ramo do dono, a partir do nome dele. Com o nome, o agente acha o nó na árvor
 - o gestor direto (o nó cujo e-mail é o `email_chefe` do dono);
 - os pares (os outros subordinados desse gestor);
 - os liderados diretos (os `subordinados` do nó do dono);
-- quem o dono nomear na entrevista como pessoa de toda semana, se estiver na base.
+- depois do passo 8, quem aparecer em várias das reuniões importadas, se estiver na base.
 
 Isso dá entre 5 e 25 pessoas. O resto entra no vault quando aparecer numa captura.
 
