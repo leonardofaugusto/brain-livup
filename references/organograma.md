@@ -64,4 +64,4 @@ Antes de criar, conferir nome repetido na base inteira, e não só no ramo: a á
 
 ## O que o organograma não dá
 
-Apelido, quem é sponsor de quê, quem decide o quê. Isso sai da entrevista (bloco D) e das capturas. O organograma diz a hierarquia formal; o vault aprende a real com o tempo.
+Apelido, quem é sponsor de quê, quem decide o quê. Isso sai das reuniões e das capturas. O organograma diz a hierarquia formal; o vault aprende a real com o tempo.

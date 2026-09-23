@@ -2,7 +2,7 @@
 
 > Modelo. Substituir todo marcador `{{...}}` pelas respostas da entrevista. Marcador que sobrar vira `⚠️ a confirmar` com a pergunta escrita por extenso, nunca resposta inventada. Apagar estas duas linhas ao terminar.
 
-**Ao se direcionar ao {{NOME}} no chat: seja conciso{{, ou o grau que ele escolher no bloco F}}.** Nas notas do vault vale a escrita completa, com frase inteira.
+**Ao se direcionar ao {{NOME}} no chat: seja conciso.** Nas notas do vault vale a escrita completa, com frase inteira.
 
 Entrada rápida: [[Painel]] para as consultas vivas, [[Estado]] para onde estamos, [[Protocolo-de-Notas]] para a mecânica de notas.
 
@@ -12,20 +12,18 @@ Esta pasta é o **Livup Brain** do {{NOME}}. Não é um projeto de software: é 
 
 ## 1. Quem é o dono
 
-- **{{NOME COMPLETO}}**, {{CARGO}} na Liv Up, área {{ÁREA}}.
-- **Mandato declarado:** {{O QUE PRECISA ACONTECER PARA O TRABALHO TER VALIDO}}.
-- **Autoridade:** {{O QUE DECIDE SOZINHO, O QUE PROPÕE, O QUE EXECUTA}}. Consequência prática para o agente: {{o que isso muda no tipo de sugestão que faz sentido}}.
-- **Cobrado por:** {{ENTREGA}}, por {{QUEM}}.
+- **{{NOME COMPLETO}}**, chamado de **{{COMO GOSTA DE SER CHAMADO}}**. {{CARGO}} na Liv Up, área {{ÁREA}}, com gestor {{[[GESTOR]]}} (fonte: organograma, base de {{MÊS}}).
+- **Mandato, autoridade e o que é cobrado:** ⚠️ ainda não registrados. Entram aqui quando aparecerem numa reunião ou captura, com fonte, ou quando o dono disser.
 - Idioma de trabalho: português brasileiro. Moeda: real (R$).
-- **Apelidos:** {{COMO AS PESSOAS CHAMAM}}. {{Erros conhecidos de transcrição, se houver}}.
+- **Erros conhecidos de transcrição do nome:** {{se a pessoa citou, ou apagar a linha}}.
 
 ---
 
 ## 2. Contexto da Liv Up
 
-O dono trabalha na Liv Up, área {{ÁREA}}. Esta seção começa vazia de propósito: número, estratégia, estrutura e vocabulário entram aqui quando aparecerem numa captura, sempre com data e fonte. O agente não completa esta seção com conhecimento próprio sobre a empresa.
+Esta seção começa vazia de propósito: número, estratégia, estrutura e vocabulário entram aqui quando aparecerem numa captura, sempre com data e fonte. O agente não completa esta seção com conhecimento próprio sobre a empresa.
 
-**Vocabulário que já apareceu:** {{sigla ou sistema do bloco B, ou apagar a linha}}.
+**Vocabulário que já apareceu:** (vazio até a primeira captura trazer).
 
 > Fato numérico aqui tem data. Ao encontrar número mais recente, atualizar e registrar a mudança no log.
 
@@ -58,7 +56,6 @@ Recomendação da Liv Up para todo Livup Brain. O dono pode ajustar o grau de se
 - Aprofunde nos temas. Prefira uma objeção específica a três genéricas.
 - Provocação se ganha, não se cumpre por ritual. Sem objeção real, encerre sem provocar. Pergunta já registrada no `Estado.md` está feita e não precisa ser refeita a cada resposta.
 
-**O que nunca fazer sem perguntar:** {{RESPOSTA DO BLOCO F}}.
 
 ---
 

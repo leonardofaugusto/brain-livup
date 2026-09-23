@@ -4,10 +4,10 @@ description: |
   Instala, na máquina de quem trabalha na Liv Up, o Livup Brain: memória pessoal em
   Obsidian operada pelo Claude. Conduz a instalação do Obsidian (recomendação da Liv Up),
   conecta o tomador de notas da pessoa (Granola ou Gemini), puxa as pessoas em volta dela do
-  organograma da Liv Up, entrevista o dono, cria a estrutura, escreve o CLAUDE.md do vault,
-  instala a rotina diária de processamento e processa a primeira captura real junto com ela.
-  A skill é uma casca: não traz contexto de área, projeto ou pessoa. O contexto nasce das
-  capturas, das reuniões e do uso, ao longo das semanas. Use quando o pedido for "quero
+  organograma da Liv Up, faz duas perguntas ao dono, cria a estrutura, escreve o CLAUDE.md,
+  instala a rotina diária e importa o contexto que a pessoa já tem (reuniões recentes, Notion,
+  Drive, notas soltas). A skill é uma casca: não traz contexto de área, projeto ou pessoa. O
+  contexto nasce do material da própria pessoa e do uso, ao longo das semanas. Use quando o pedido for "quero
   montar meu Livup Brain", "instalar o Livup Brain", "quero um Livup Brain", "montar meu vault",
   ou para auditar se um vault existente cumpre os contratos. Não use para pasta de contexto
   de Área ou Agente num repositório de IA (isso é `criar-estrutura-de-contexto`) nem para
@@ -28,7 +28,7 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 ## Arquivos desta skill
 
 - `references/contratos.md`: o núcleo não negociável e o que cada dono pode adaptar. Ler antes de criar qualquer arquivo.
-- `references/entrevista.md`: os blocos de pergunta do bootstrap.
+- `references/entrevista.md`: as duas perguntas do bootstrap e como importar o que a pessoa já registra.
 - `references/tomadores-de-notas.md`: como conectar Granola ou Gemini e como o agente busca as reuniões.
 - `references/organograma.md`: como puxar do organograma da Liv Up as pessoas em volta do dono.
 - `references/plugins-obsidian.md`: o conjunto de plugins recomendado pela Liv Up, com o que cada um habilita.
@@ -70,9 +70,7 @@ O tamanho padrão da Liv Up é o **Padrão com reuniões**: `CLAUDE.md`, `Painel
 
 ## Passo 2: entrevistar o dono
 
-Rodar os blocos de `references/entrevista.md`, em conversa, uma pergunta por vez. Regra do sistema: **não preencher lacuna com suposição plausível**. Resposta que não existe vira `⚠️ a confirmar` no `CLAUDE.md` e continua faltando até alguém responder.
-
-A entrevista tem duas saídas obrigatórias: o conteúdo pessoal do `CLAUDE.md` e a primeira captura real, usada no passo 8.
+Duas perguntas, em `references/entrevista.md`: como a pessoa gosta de ser chamada, e onde está hoje o que ela já anota e registra. O resto não se pergunta: cargo, área e gestor vêm do organograma (passo 4), e frentes, pessoas e vocabulário vêm das reuniões e do material que ela já tem (passos 3 e 8). Regra do sistema: **não preencher lacuna com suposição plausível**. O que nenhuma fonte trouxe fica marcado `⚠️ a confirmar`.
 
 ## Passo 3: conectar o tomador de notas
 
@@ -100,7 +98,7 @@ bash <caminho-da-skill>/assets/bootstrap.sh ~/LivupBrain padrao
 
 Depois do script:
 
-1. Escrever o `CLAUDE.md` a partir de `assets/CLAUDE-modelo.md`, substituindo todo marcador `{{...}}` pelas respostas da entrevista e dos passos 3 e 4. Marcador que sobrou é erro: ou vira resposta, ou vira `⚠️ a confirmar` com a pergunta por extenso.
+1. Escrever o `CLAUDE.md` a partir de `assets/CLAUDE-modelo.md`, substituindo todo marcador `{{...}}` pelas respostas da entrevista e pelo que os passos 3 e 4 trouxeram. Marcador que sobrou é erro: ou vira resposta, ou vira `⚠️ a confirmar` com a pergunta por extenso.
 2. Escrever o primeiro `00-Sistema/Estado.md` com a foto real do dia, e o primeiro log em `00-Sistema/Log/Log-AAAA-MM-DD.md`.
 3. Abrir a pasta no Obsidian como vault ("Abrir pasta como cofre") e confirmar que o `Painel.md` aparece.
 
@@ -126,17 +124,17 @@ cp -R <caminho-da-skill>/assets/skills/bom-dia ~/.claude/skills/bom-dia
 
 Combinar com a pessoa o gatilho: ela abre o Claude Code na pasta do vault e digita `/bom-dia` no começo do dia.
 
-## Passo 8: processar a primeira captura junto com o dono
+## Passo 8: importar o contexto que já existe
 
-Este passo não é opcional e é o que separa um vault vivo de uma pasta bonita.
+Este passo não é opcional e é o que separa um vault vivo de uma pasta bonita. O vault não nasce vazio: nasce do que a pessoa já tem.
 
-1. Pedir uma captura real, agora, no formato que a pessoa já usa: texto colado de reunião, três linhas soltas, um link com um comentário. Salvar em `00-Inbox/` sem editar. Se o passo 3 trouxe uma reunião recente, ela também serve.
-2. Processar na frente dela, dizendo cada decisão em voz alta: o que virou nota atômica, o que virou projeto, o que virou tarefa, o que ficou marcado como a confirmar.
-3. Mover o bruto para `00-Sistema/Bruto/AAAA-MM-DD-slug.md` sem alterar uma palavra.
-4. Devolver as três listas do protocolo: o que foi criado, o que virou proposta esperando confirmação dela, e onde a captura contradiz algo que já estava no vault.
-5. Fechar a sessão pelo protocolo completo: log do dia, `Estado.md` reescrito, notas de projeto tocadas atualizadas.
-
-A pessoa precisa ver o ciclo inteiro uma vez para confiar que pode despejar sem organizar. Enquanto ela achar que precisa formatar antes de capturar, ela não captura.
+1. **Reuniões recentes.** Trazer pelo tomador de notas as reuniões das últimas duas semanas para `00-Diario/Reunioes/`, uma nota por reunião, como a rotina diária faz. Duas semanas bastam para aparecerem as frentes e as pessoas que se repetem; mais que isso deixa a primeira sessão longa demais.
+2. **Material próprio.** Para cada lugar que ela citou na pergunta 2, trazer o que ela indicar: páginas do Notion e documentos do Drive pelos conectores, texto colado ou exportado de bloco de notas e WhatsApp. Cada item entra em `00-Inbox/` sem edição.
+3. **Processar uma captura na frente dela**, dizendo cada decisão em voz alta: o que virou nota atômica, o que virou projeto, o que virou tarefa, o que ficou como a confirmar. Mover o bruto para `00-Sistema/Bruto/AAAA-MM-DD-slug.md` sem alterar uma palavra. A pessoa precisa ver o ciclo inteiro uma vez para confiar que pode despejar sem organizar.
+4. **Processar o resto** pelo mesmo protocolo. Se o volume for grande, processar as reuniões primeiro e deixar o material próprio para o primeiro `/bom-dia`, registrando no `Estado.md` o que ficou na inbox.
+5. **Escrever o `Estado.md`** com as frentes que apareceram nas reuniões e no material, cada uma com a fonte. É a primeira vez que o vault descreve o presente dela, e ela confere.
+6. Devolver as três listas do protocolo: o que foi criado, o que virou proposta esperando confirmação dela, e onde uma fonte contradiz outra.
+7. Fechar a sessão pelo protocolo completo: log do dia, `Estado.md`, notas de projeto tocadas.
 
 ## Passo 9: checklist de aceite
 
@@ -145,7 +143,7 @@ O vault está de pé quando as afirmações abaixo são verdadeiras. Rodar o che
 - [ ] O Obsidian abre a pasta e o `Painel.md` devolve alguma coisa.
 - [ ] O tomador de notas está conectado e a busca de teste trouxe pelo menos uma reunião.
 - [ ] As pessoas do ramo do dono estão em `30-Pessoas/`, com a fonte apontando para o organograma.
-- [ ] Uma captura real foi processada de ponta a ponta, com bruto preservado.
+- [ ] As reuniões das últimas duas semanas e o material indicado por ela estão no vault, com pelo menos uma captura processada de ponta a ponta e bruto preservado.
 - [ ] `Estado.md` descreve o presente da pessoa, e não o que a skill imaginou.
 - [ ] O log do dia registra a sessão de montagem, incluindo o que ficou em aberto.
 - [ ] `/bom-dia` está instalado e a pessoa sabe quando rodar.
@@ -170,7 +168,7 @@ Entregar como lista de problema com correção proposta, e aplicar só depois do
 - Não traz contexto de área, projeto ou pessoa de outro vault. O contexto vem das capturas.
 - Não cria projeto, área ou nota que o dono não nomeou, fora as pessoas do ramo dele no organograma.
 - Não decide sozinha onde o vault mora.
-- Não entrega vault vazio. Sem a captura do passo 8, o trabalho não terminou.
+- Não entrega vault vazio. Sem a importação do passo 8, o trabalho não terminou.
 - Não monta base compartilhada de time.
 
 ## Onde a skill mora
