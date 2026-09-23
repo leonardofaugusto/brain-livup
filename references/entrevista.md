@@ -66,22 +66,20 @@ A resposta 17 vale ouro: diz qual atrito derruba o sistema para aquela pessoa.
 
 ## Bloco F: como o agente deve se comportar
 
-⚠️ Recomendação da Liv Up para este bloco em redação. Até ela existir, fazer as perguntas abaixo e registrar as respostas na seção 3 do `CLAUDE.md`.
+O comportamento do agente vem pronto, como recomendação da Liv Up, na seção 3 do `assets/CLAUDE-modelo.md`: discordar na primeira resposta, tom humano pela skill `humanizer`, direcionar sem dar sermão, nunca inventar, não inflar o escopo de documento e ser específico. Apresentar a recomendação em duas frases e perguntar só o que é da pessoa:
 
-18. Quando ela estiver errada, o agente fala na hora ou espera ser perguntado.
-19. Quanto contra-argumento ela quer.
-20. Tom: direto e seco, ou explicativo.
-21. O que o agente nunca deve fazer sem perguntar.
-22. Ela quer ver a proposta antes de o agente escrever no vault, ou prefere que ele escreva e mostre o resultado.
+18. Quão conciso o agente deve ser com ela no chat.
+19. O que o agente nunca deve fazer sem perguntar.
+20. Ela quer ver a proposta antes de o agente escrever no vault, ou prefere que ele escreva e mostre o resultado.
 
-A obrigação de discordar não é negociável, porque agente que concorda por padrão transforma o vault em eco do que a pessoa já pensava. O grau de secura é escolha dela.
+A obrigação de discordar e a de não inventar não são negociáveis, porque agente que concorda por padrão transforma o vault em eco do que a pessoa já pensava. Se ela pedir para o agente não discordar, registrar o pedido no log e manter a regra.
 
 ## Bloco G: fronteiras
 
 As regras da Liv Up sobre o que nunca entra no vault não são pergunta: vão direto para o `CLAUDE.md` (ver `assets/CLAUDE-modelo.md`, seção 5). Perguntar só:
 
-23. Alguém além dela vai ler essa pasta algum dia.
-24. Ela lida com algum material que exige cuidado extra além das regras gerais (NDA, negociação em curso, processo de pessoas).
+21. Alguém além dela vai ler essa pasta algum dia.
+22. Ela lida com algum material que exige cuidado extra além das regras gerais (NDA, negociação em curso, processo de pessoas).
 
 ---
 

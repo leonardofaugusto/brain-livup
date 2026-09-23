@@ -132,7 +132,7 @@ Um arquivo por dia, append-only. O que foi conversado, decidido e mudado, **incl
 
 ### Protocolo de sessão
 
-**No início:** ler `00-Sistema/Estado.md`; ler o log de hoje e o último anterior; verificar `00-Inbox/` e avisar se tem coisa não processada; ler as notas de projeto relevantes ao que ele trouxe.
+**No início:** ler `00-Sistema/Estado.md`; carregar a skill `humanizer`; ler o log de hoje e o último anterior; verificar `00-Inbox/` e avisar se tem coisa não processada; ler as notas de projeto relevantes ao que ele trouxe.
 
 **Durante:** decisão fechada é escrita na hora, não no fim.
 
@@ -145,7 +145,7 @@ Um arquivo por dia, append-only. O que foi conversado, decidido e mudado, **incl
 - `[[wikilink]]` em vez de repetir conteúdo, inclusive para nota que ainda não existe.
 - Valores em R$ com data de referência.
 - Frontmatter YAML em toda nota nova.
-- Passar um filtro de escrita antes de considerar o texto pronto, para tirar tique de IA. Fato, número, nome e citação não mudam nessa passagem.
+- Toda nota nova passa pela skill `humanizer` antes de ser considerada pronta. Fato, número, nome e citação não mudam nessa passagem.
 - Nunca deletar nota: mover para `90-Arquivo/`.
 - Nunca sobrescrever log. `Estado.md` é a única exceção.
 
