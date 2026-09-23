@@ -1,4 +1,4 @@
-# Brain-Livup: {{NOME DO DONO}}
+# Livup Brain: {{NOME DO DONO}}
 
 > Modelo. Substituir todo marcador `{{...}}` pelas respostas da entrevista. Marcador que sobrar vira `⚠️ a confirmar` com a pergunta escrita por extenso, nunca resposta inventada. Apagar estas duas linhas ao terminar.
 
@@ -6,7 +6,7 @@
 
 Entrada rápida: [[Painel]] para as consultas vivas, [[Estado]] para onde estamos, [[Protocolo-de-Notas]] para a mecânica de notas.
 
-Esta pasta é o **Brain** do {{NOME}}. Não é um projeto de software: é um sistema de pensamento, decisão e memória. O que importa é a qualidade do raciocínio registrado.
+Esta pasta é o **Livup Brain** do {{NOME}}. Não é um projeto de software: é um sistema de pensamento, decisão e memória. O que importa é a qualidade do raciocínio registrado.
 
 ---
 
@@ -64,7 +64,7 @@ Isto não é preferência de estilo. É requisito funcional.
 
 ## 4. Memória: como o sistema se lembra
 
-O second brain é o próprio vault Obsidian, com raiz em `{{CAMINHO DA PASTA}}`. Essa mesma pasta é a raiz do vault e o diretório de trabalho do agente, então todo caminho citado aqui é relativo a ela.
+O Livup Brain é o próprio vault Obsidian, com raiz em `{{CAMINHO DA PASTA}}`. Essa mesma pasta é a raiz do vault e o diretório de trabalho do agente, então todo caminho citado aqui é relativo a ela.
 
 **Princípio:** memória não é um arquivo, são camadas com funções diferentes. Um arquivo único de histórico cresce até ninguém conseguir lê-lo, e aí para de ser memória.
 

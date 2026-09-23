@@ -1,4 +1,4 @@
-# Contratos do second brain
+# Contratos do Livup Brain
 
 O que viaja de um vault para outro. Tudo nesta página vale para qualquer dono, em qualquer área, em qualquer tamanho de vault. A última seção separa o que é negociável.
 

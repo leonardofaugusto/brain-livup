@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Cria o esqueleto de um second brain pessoal, no padrão da skill brain-livup.
+# Cria o esqueleto de um Livup Brain pessoal, no padrão da skill brain-livup.
 # Equivalente do bootstrap.ps1 para macOS e Linux.
 #
 # Uso: ./bootstrap.sh <destino> [minimo|padrao|completo]

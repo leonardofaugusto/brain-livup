@@ -1,6 +1,6 @@
 ﻿<#
 .SYNOPSIS
-  Cria o esqueleto de um second brain pessoal, no padrão da skill brain-livup.
+  Cria o esqueleto de um Livup Brain pessoal, no padrão da skill brain-livup.
 
 .DESCRIPTION
   Faz só o mecânico: pastas, arquivos de sistema, templates e índices. Não inventa
@@ -9,7 +9,7 @@
   Não sobrescreve arquivo que já existe.
 
 .EXAMPLE
-  powershell -ExecutionPolicy Bypass -File .\bootstrap.ps1 -Destino "C:\Users\fulano\Desktop\SecondBrain" -Tamanho padrao
+  powershell -ExecutionPolicy Bypass -File .\bootstrap.ps1 -Destino "C:\Users\fulano\LivupBrain" -Tamanho padrao
 #>
 [CmdletBinding()]
 param(

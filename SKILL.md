@@ -1,14 +1,14 @@
 ---
 name: brain-livup
 description: |
-  Brain-Livup: instala, na máquina de quem trabalha na Liv Up, um second brain pessoal em
-  Obsidian operado pelo Claude. Conduz a instalação do Obsidian (recomendação da Liv Up),
+  Instala, na máquina de quem trabalha na Liv Up, o Livup Brain: memória pessoal em
+  Obsidian operada pelo Claude. Conduz a instalação do Obsidian (recomendação da Liv Up),
   conecta o tomador de notas da pessoa (Granola ou Gemini), puxa as pessoas em volta dela do
   organograma da Liv Up, entrevista o dono, cria a estrutura, escreve o CLAUDE.md do vault,
   instala a rotina diária de processamento e processa a primeira captura real junto com ela.
   A skill é uma casca: não traz contexto de área, projeto ou pessoa. O contexto nasce das
   capturas, das reuniões e do uso, ao longo das semanas. Use quando o pedido for "quero
-  montar meu Brain", "instalar o LivUp Brain", "quero um second brain", "montar meu vault",
+  montar meu Livup Brain", "instalar o Livup Brain", "quero um Livup Brain", "montar meu vault",
   ou para auditar se um vault existente cumpre os contratos. Não use para pasta de contexto
   de Área ou Agente num repositório de IA (isso é `criar-estrutura-de-contexto`) nem para
   arquitetura de agente (isso é `criar-arquitetura-agente`).
@@ -17,7 +17,7 @@ metadata:
   versao: "2026-09-23"
 ---
 
-# Brain-Livup: second brain pessoal operado pelo Claude
+# Livup Brain: memória pessoal operada pelo Claude
 
 Um vault por pessoa, na máquina dela. O que esta skill instala é um **sistema de memória**, não um conteúdo: quem escreve o quê, o que nunca pode ser reescrito, o que o agente lê antes de responder, o que ele escreve antes de encerrar, e a rotina que transforma captura bruta em contexto todo dia.
 
@@ -62,7 +62,7 @@ Conferir abrindo o Obsidian uma vez. A pasta do vault só é aberta nele no pass
 
 ## Passo 1: onde o vault mora
 
-Sugerir caminho curto, estável, sem acento e sem espaço (por exemplo `C:\Users\<usuario>\Brain` ou `~/Brain`). **Fora de pasta sincronizada por OneDrive ou Google Drive:** sincronia automática sobre arquivo editado por agente produz conflito silencioso e cópia duplicada.
+Sugerir caminho curto, estável, sem acento e sem espaço (por exemplo `C:\Users\<usuario>\LivupBrain` ou `~/LivupBrain`). **Fora de pasta sincronizada por OneDrive ou Google Drive:** sincronia automática sobre arquivo editado por agente produz conflito silencioso e cópia duplicada.
 
 Nesta fase o vault não é versionado nem tem backup automático. Registrar isso no `CLAUDE.md` como decisão consciente, para que ninguém descubra depois.
 
@@ -91,11 +91,11 @@ Não importar a empresa inteira. Centenas de notas de pessoa que ninguém usa po
 O script de bootstrap faz o mecânico (pastas, arquivos de sistema, templates, índices) e não inventa conteúdo. Não sobrescreve arquivo existente, então rodar duas vezes é seguro.
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File <caminho-da-skill>\assets\bootstrap.ps1 -Destino "C:\Users\<usuario>\Brain" -Tamanho padrao
+powershell -ExecutionPolicy Bypass -File <caminho-da-skill>\assets\bootstrap.ps1 -Destino "C:\Users\<usuario>\LivupBrain" -Tamanho padrao
 ```
 
 ```bash
-bash <caminho-da-skill>/assets/bootstrap.sh ~/Brain padrao
+bash <caminho-da-skill>/assets/bootstrap.sh ~/LivupBrain padrao
 ```
 
 Depois do script:

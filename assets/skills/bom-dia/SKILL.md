@@ -1,7 +1,7 @@
 ---
 name: bom-dia
 description: |
-  Rotina diária do Brain-Livup. Use quando o dono pedir /bom-dia, "bom dia", "processa minhas
+  Rotina diária do Livup Brain. Use quando o dono pedir /bom-dia, "bom dia", "processa minhas
   reuniões", "como está meu dia" ou equivalente, com o Claude Code aberto na pasta do vault.
   Busca as reuniões novas no tomador de notas (Granola ou Gemini), cria o diário do dia com a
   agenda, processa diário, reuniões e inbox pelo Protocolo de Notas, e devolve um resumo curto
