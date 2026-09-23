@@ -14,6 +14,8 @@ O organograma da Liv Up é um app da plataforma interna, `organograma-pessoas-li
 
 O MCP da plataforma de apps (`livup-deploy`) lê o código e os metadados do app (`list_files`, `get_file`, `list_projects`), não o banco dele. A base de pessoas mora no Supabase do app, atrás do gate de login, e o app não publica recurso de dados para outros apps (`list_data_apis` não o lista). O gateway de APIs internas (`list_core_apis`) não tem API de pessoas, e o BigQuery liberado ao Claude não tem tabela de colaboradores. Por isso a leitura passa pela sessão da pessoa no navegador, descrita abaixo. Para ler sem login, o app precisaria expor a base por um canal de máquina, decisão de People, dona do app, com os admins da plataforma.
 
+Caminho pela sessão validado em 2026-09-23: com login feito no navegador, `GET /api/pessoas` devolveu 200, 279 pessoas, base de setembro de 2026, e o ramo (gestor, pares, diretos) saiu corretamente pelo `email_chefe`.
+
 ## O que puxar
 
 O ramo do dono, a partir do nome dele. Com o nome, o agente acha o nó na árvore e lê:
