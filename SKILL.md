@@ -140,7 +140,7 @@ Este passo não é opcional e é o que separa um vault vivo de uma pasta bonita.
 
 O vault está de pé quando as afirmações abaixo são verdadeiras. Rodar o checklist com o dono, não sozinho.
 
-- [ ] O Obsidian abre a pasta e o `Painel.md` devolve alguma coisa.
+- [x] O Obsidian abre a pasta e o `Painel.md` devolve alguma coisa.
 - [ ] O tomador de notas está conectado e a busca de teste trouxe pelo menos uma reunião.
 - [ ] As pessoas do ramo do dono estão em `30-Pessoas/`, com a fonte apontando para o organograma.
 - [ ] As reuniões das últimas duas semanas e o material indicado por ela estão no vault, com pelo menos uma captura processada de ponta a ponta e bruto preservado.
