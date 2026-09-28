@@ -13,7 +13,7 @@ Instruções para o Claude:
 3. Conferir que existe `~/.claude/skills/brain-livup/SKILL.md`.
 4. Avisar a pessoa para reiniciar o Claude Code, abrir numa pasta nova e vazia (por exemplo `~/LivupBrain`) e digitar `/brain-livup`.
 
-A rotina diária `/bom-dia` é instalada pela própria skill, no passo 7.
+As skills `/bom-dia` (rotina diária) e `humanizer` (filtro de escrita) são instaladas pela própria skill, no passo 7.
 
 ## Atualizar
 

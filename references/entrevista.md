@@ -30,6 +30,7 @@ Essa é a pergunta principal. A resposta diz de onde o vault tira contexto no pr
 | Google Docs ou Drive | Pelo conector do Google Drive: buscar os documentos ou a pasta que ela indicar |
 | Bloco de notas, WhatsApp, e-mail para si mesma | Ela copia e cola na conversa, ou exporta e joga na `00-Inbox/` |
 | Caderno ou papel | Foto na `00-Inbox/`, quando ela quiser; não bloqueia a montagem |
+| Memória do Claude no claude.ai | Tutorial no passo 8: ela pede ao Claude do claude.ai o que ele lembra dela e cola o resultado na inbox. Vale para todo mundo que já usa o claude.ai, mesmo que não cite |
 | Nada | O vault começa pelas reuniões do passo 3 e cresce pela captura diária |
 
 Se ela contar o que já tentou de organização e largou, anotar no log: diz qual atrito derruba o sistema para ela.

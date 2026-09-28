@@ -25,6 +25,19 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 
 **Isto é memória pessoal.** Cada um tem o seu, com as próprias capturas. Memória compartilhada de time é outro desenho, e a skill para isso é `criar-estrutura-de-contexto`.
 
+## Como conduzir
+
+A pessoa vive a montagem como um onboarding em cinco etapas, com o roteiro de `references/onboarding.md`: abertura explicando o que é o Livup Brain, marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso. Ler o roteiro antes do passo 0 e mostrar a abertura antes de qualquer checagem.
+
+| Etapa do onboarding | Passos abaixo |
+|---|---|
+| 1. Preparar a máquina | 0 e 1 |
+| 2. Te conhecer | 2 |
+| 3. Conectar reuniões e equipe | 3 e 4 |
+| 4. Montar a pasta | 5, 6 e 7 |
+| 5. Trazer o que já existe | 8 |
+| Fechamento | 9 e 10 |
+
 ## Arquivos desta skill
 
 - `references/contratos.md`: o núcleo não negociável e o que cada dono pode adaptar. Ler antes de criar qualquer arquivo.
@@ -34,7 +47,9 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 - `references/plugins-obsidian.md`: o conjunto de plugins recomendado pela Liv Up, com o que cada um habilita.
 - `assets/CLAUDE-modelo.md`: modelo do `CLAUDE.md` do vault novo, com marcadores `{{...}}`.
 - `assets/bootstrap.ps1` e `assets/bootstrap.sh`: criam o esqueleto e copiam os arquivos de sistema, no Windows e no macOS.
+- `references/onboarding.md`: o roteiro do que a pessoa lê em cada etapa.
 - `assets/skills/bom-dia/`: a rotina diária que processa reuniões, diário e inbox. Instalada no passo 7.
+- `assets/skills/humanizer/`: o filtro de escrita usado em toda nota. Instalado no passo 7.
 - `assets/` e `assets/templates/`: arquivos de sistema e templates copiados para o vault novo.
 
 ## Passo 0: o que precisa existir na máquina
@@ -110,16 +125,21 @@ Instalar com a pessoa o conjunto recomendado em `references/plugins-obsidian.md`
 
 Regra que não muda com plugin nenhum: **nenhum índice é mantido à mão**.
 
-## Passo 7: instalar a rotina diária
+## Passo 7: instalar as rotinas
 
-Copiar `assets/skills/bom-dia/` para `~/.claude/skills/bom-dia/`. É ela que faz o vault viver: busca as reuniões novas no tomador de notas, cria o diário do dia com a agenda, processa diário, reuniões e inbox pelo protocolo, e devolve um resumo curto. Sem rotina, o processamento depende de a pessoa lembrar de pedir, e o vault morre em três semanas.
+Duas skills vão junto, em `assets/skills/`:
+
+- `bom-dia`: faz o vault viver. Busca as reuniões novas no tomador de notas, cria o diário do dia com a agenda, processa diário, reuniões e inbox pelo protocolo, e devolve um resumo curto. Sem rotina, o processamento depende de a pessoa lembrar de pedir, e o vault morre em três semanas.
+- `humanizer`: o filtro de escrita que o `CLAUDE.md` do vault manda usar em toda nota e resposta. Se a pessoa já tiver uma skill `humanizer` instalada, não sobrescrever.
 
 ```powershell
 Copy-Item -Recurse <caminho-da-skill>\assets\skills\bom-dia "$env:USERPROFILE\.claude\skills\bom-dia"
+if (-not (Test-Path "$env:USERPROFILE\.claude\skills\humanizer")) { Copy-Item -Recurse <caminho-da-skill>\assets\skills\humanizer "$env:USERPROFILE\.claude\skills\humanizer" }
 ```
 
 ```bash
 cp -R <caminho-da-skill>/assets/skills/bom-dia ~/.claude/skills/bom-dia
+[ -d ~/.claude/skills/humanizer ] || cp -R <caminho-da-skill>/assets/skills/humanizer ~/.claude/skills/humanizer
 ```
 
 Combinar com a pessoa o gatilho: ela abre o Claude Code na pasta do vault e digita `/bom-dia` no começo do dia.
@@ -129,7 +149,8 @@ Combinar com a pessoa o gatilho: ela abre o Claude Code na pasta do vault e digi
 Este passo não é opcional e é o que separa um vault vivo de uma pasta bonita. O vault não nasce vazio: nasce do que a pessoa já tem.
 
 1. **Reuniões recentes.** Trazer pelo tomador de notas as reuniões das últimas duas semanas para `00-Diario/Reunioes/`, uma nota por reunião, como a rotina diária faz. Duas semanas bastam para aparecerem as frentes e as pessoas que se repetem; mais que isso deixa a primeira sessão longa demais.
-2. **Material próprio.** Para cada lugar que ela citou na pergunta 2, trazer o que ela indicar: páginas do Notion e documentos do Drive pelos conectores, texto colado ou exportado de bloco de notas e WhatsApp. Cada item entra em `00-Inbox/` sem edição.
+2. **Memória do claude.ai.** Se a pessoa já usa o Claude no navegador, conduzir o tutorial da Etapa 5 em `references/onboarding.md`: ela pede ao Claude de lá tudo o que ele lembra dela e cola a resposta, que vira `00-Inbox/AAAA-MM-DD-memoria-claude-ai.md` sem edição. É resumo feito por máquina, não palavra dela: toda afirmação tirada dali entra com `confirmado: false`.
+3. **Material próprio.** Para cada lugar que ela citou na pergunta 2, trazer o que ela indicar: páginas do Notion e documentos do Drive pelos conectores, texto colado ou exportado de bloco de notas e WhatsApp. Cada item entra em `00-Inbox/` sem edição.
 3. **Processar uma captura na frente dela**, dizendo cada decisão em voz alta: o que virou nota atômica, o que virou projeto, o que virou tarefa, o que ficou como a confirmar. Mover o bruto para `00-Sistema/Bruto/AAAA-MM-DD-slug.md` sem alterar uma palavra. A pessoa precisa ver o ciclo inteiro uma vez para confiar que pode despejar sem organizar.
 4. **Processar o resto** pelo mesmo protocolo. Se o volume for grande, processar as reuniões primeiro e deixar o material próprio para o primeiro `/bom-dia`, registrando no `Estado.md` o que ficou na inbox.
 5. **Escrever o `Estado.md`** com as frentes que apareceram nas reuniões e no material, cada uma com a fonte. É a primeira vez que o vault descreve o presente dela, e ela confere.
@@ -146,7 +167,7 @@ O vault está de pé quando as afirmações abaixo são verdadeiras. Rodar o che
 - [ ] As reuniões das últimas duas semanas e o material indicado por ela estão no vault, com pelo menos uma captura processada de ponta a ponta e bruto preservado.
 - [ ] `Estado.md` descreve o presente da pessoa, e não o que a skill imaginou.
 - [ ] O log do dia registra a sessão de montagem, incluindo o que ficou em aberto.
-- [ ] `/bom-dia` está instalado e a pessoa sabe quando rodar.
+- [ ] `/bom-dia` e `humanizer` estão instalados, e a pessoa sabe quando rodar o `/bom-dia`.
 - [ ] A pessoa responde, sem olhar, onde ela despeja uma ideia de três palavras às onze da noite.
 
 Falhou alguma, o vault não foi entregue. Registrar o que falta no log e combinar quando fecha.
