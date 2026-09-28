@@ -27,7 +27,7 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 
 ## Como conduzir
 
-A pessoa vive a montagem como um onboarding em cinco etapas, com o roteiro de `references/onboarding.md`: abertura explicando o que é o Livup Brain, marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso. Ler o roteiro antes do passo 0 e mostrar a abertura antes de qualquer checagem.
+**Primeira ação, antes de qualquer outra: ler `references/onboarding.md` e mostrar a abertura dele literalmente, com a marmita, como primeira mensagem.** Nenhum comando roda antes disso. Depois, a pessoa vive a montagem como um onboarding em cinco etapas: marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso.
 
 | Etapa do onboarding | Passos abaixo |
 |---|---|

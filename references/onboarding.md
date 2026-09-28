@@ -9,11 +9,11 @@ Este arquivo define o que a pessoa lê durante a montagem. Os passos técnicos d
 - Cada etapa abre com o marcador `Etapa N de 5` e uma frase sobre o que ela entrega.
 - Frase curta, segunda pessoa, sem jargão. "Vault" só aparece depois que a abertura explicou o que é. Nada de "incrível", "poderoso" ou "vamos lá".
 - Texto passa pela skill `humanizer` antes de ser mostrado.
-- Os textos abaixo são base, não script decorado. Adaptar ao que a pessoa já disse, mantendo o conteúdo.
+- A abertura é texto fixo: sai literal, sem resumo nem paráfrase. Os textos das etapas e do fechamento são base: adaptar ao que a pessoa já disse, mantendo o conteúdo.
 
 ## Abertura
 
-Mostrar antes de qualquer checagem, numa mensagem só, começando pela marmita dentro de bloco de código (para manter o alinhamento):
+**Primeira mensagem da skill, antes de ler qualquer outro arquivo, rodar qualquer comando ou fazer qualquer checagem.** Copiar literalmente tudo o que está entre este parágrafo e a linha "Começando.", começando pela marmita dentro de bloco de código (para manter o alinhamento). Proibido substituir por um resumo do tipo "vou apresentar o Livup Brain e iniciar a configuração". O `>` no começo das linhas é só marcação deste arquivo: sai sem ele.
 
 ```
      _________________________________
