@@ -33,6 +33,7 @@ INÍCIO
     |  ~ ~~ ~   | = = =    |  [x] [ ] |
     '---------------------------------'
        comida de verdade pra cabeça
+    (isso era pra ser uma marmita)
 ```
 
 O Livup Brain transforma o Claude no seu agente pessoal de trabalho. Ele ganha uma pasta no seu computador onde guarda o que acontece no seu dia: reuniões, anotações, decisões, pessoas. Antes de responder, ele lê essa pasta. Depois de cada conversa, ele atualiza.
@@ -70,7 +71,7 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 
 ## Como conduzir
 
-Depois da abertura literal do topo deste arquivo, a pessoa vive a montagem como um onboarding em cinco etapas, com o roteiro de `references/onboarding.md`: marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso.
+Depois da abertura literal do topo deste arquivo, a pessoa vive a montagem como um onboarding em cinco etapas, com o roteiro de `references/onboarding.md`: trilha de progresso em cada etapa, checagem técnica em silêncio quando passa, um momento aha respondendo uma pergunta real com o contexto importado, e fechamento com a marmita cheia de números reais e os três hábitos de uso.
 
 | Etapa do onboarding | Passos abaixo |
 |---|---|

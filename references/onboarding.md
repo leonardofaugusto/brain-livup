@@ -6,7 +6,7 @@ Este arquivo define o que a pessoa lê durante a montagem. Os passos técnicos d
 
 - Toda mensagem diz o que está acontecendo e por que importa para a pessoa. Nada de "vou verificar algumas coisas".
 - Checagem técnica que passou não aparece. Versão do Obsidian, caminho sem acento, pasta fora do OneDrive: o agente confere em silêncio e só fala se algo falhar, e aí fala o que a pessoa precisa fazer.
-- Cada etapa abre com o marcador `Etapa N de 5` e uma frase sobre o que ela entrega.
+- Cada etapa abre com a trilha de progresso (seção abaixo) e uma frase sobre o que ela entrega.
 - Frase curta, segunda pessoa, sem jargão. "Vault" só aparece depois que a abertura explicou o que é. Nada de "incrível", "poderoso" ou "vamos lá".
 - Texto passa pela skill `humanizer` antes de ser mostrado.
 - A abertura é texto fixo: sai literal, sem resumo nem paráfrase. Os textos das etapas e do fechamento são base: adaptar ao que a pessoa já disse, mantendo o conteúdo.
@@ -14,6 +14,22 @@ Este arquivo define o que a pessoa lê durante a montagem. Os passos técnicos d
 ## Abertura
 
 O texto da abertura mora no topo do `SKILL.md`, na seção "PRIMEIRA RESPOSTA", e sai literal. Este arquivo cuida das etapas e do fechamento.
+
+## Trilha de progresso
+
+Toda etapa abre com a trilha dentro de bloco de código, antes do texto da etapa. `◇` é etapa feita, `◆` é a atual, `○` é a que falta. Etapa feita leva o resultado curto dela no lugar do nome, quando houver um resultado real para mostrar. Exemplo, abrindo a etapa 3:
+
+```
+◇  Máquina pronta
+◇  Oi, Raquel
+│
+◆  Etapa 3 de 5 · Reuniões e equipe
+│
+○  Montar a pasta
+○  Trazer seu contexto
+```
+
+Nomes curtos das etapas na trilha: "Preparar a máquina", "Te conhecer", "Reuniões e equipe", "Montar a pasta", "Trazer seu contexto". Resultados curtos possíveis: "Máquina pronta", "Oi, <apelido>", "<N> reuniões e <N> pessoas", "Pasta montada".
 
 ## Etapa 1 de 5: preparar a máquina
 
@@ -99,13 +115,49 @@ Se a pessoa não usa o claude.ai, ou a resposta vier vazia, seguir sem esse pass
 
 Ao processar a captura na frente da pessoa, narrar as decisões no formato "isto virou X porque Y", uma linha por decisão. Ao terminar o resto, mostrar números reais: quantas reuniões, notas, pessoas e tarefas.
 
+## Momento aha
+
+Depois de processar tudo e antes do fechamento, mostrar o Livup Brain funcionando com o que acabou de entrar. Escolher uma pessoa ou frente que apareceu em pelo menos duas reuniões importadas e responder, sem a pessoa pedir:
+
+> Antes de fechar, um teste. Perguntei a mim mesmo: **"O que ficou aberto com `<pessoa>`?"**
+>
+> `<resposta curta, dois a quatro itens, cada um com a reunião de origem e a data>`
+>
+> Tudo isso veio das suas reuniões, e eu não precisei que você me contasse nada. Agora faça você uma pergunta sobre qualquer coisa do seu trabalho.
+
+Responder a pergunta dela do mesmo jeito, com fonte. Se nenhuma pessoa ou frente aparecer em duas reuniões, usar a reunião mais recente: "O que foi decidido na `<reunião>`?". Sem reunião importada, pular este passo.
+
 ## Fechamento
 
-Passos 9 e 10 do `SKILL.md`. Mostrar numa mensagem só.
+Passos 9 e 10 do `SKILL.md`. Mostrar numa mensagem só, começando pela trilha completa e pela marmita cheia, as duas em bloco de código.
+
+```
+◇  Máquina pronta
+◇  Oi, <apelido>
+◇  <N> reuniões e <N> pessoas
+◇  Pasta montada
+◇  Contexto trazido
+│
+└  Pronto
+```
+
+```
+     _________________________________
+    /                                 \
+   |       L I V U P   B R A I N       |
+    \_________________________________/
+    |  ideias   | reuniões | decisões |
+    |    <N>    |   <N>    |   <N>    |
+    '---------------------------------'
+          sua marmita está cheia
+    (isso era pra ser uma marmita)
+```
+
+Na marmita cheia, `ideias` é o número de notas em `40-Notas/`, `reuniões` o de notas em `00-Diario/Reunioes/` e `decisões` o de decisões registradas no log e nas notas de projeto. Centralizar cada número na coluna preenchendo com espaço até a largura da célula (11, 10 e 10 caracteres), para a caixa não entortar.
 
 > **Seu Livup Brain está pronto.**
 >
-> Hoje ele já tem `<N>` reuniões, `<N>` pessoas e `<N>` frentes do seu trabalho. As frentes estão em `00-Sistema/Estado.md`: dê uma olhada e me diga se falta ou sobra alguma.
+> As `<N>` frentes do seu trabalho que apareceram estão em `00-Sistema/Estado.md`: dê uma olhada e me diga se falta ou sobra alguma.
 >
 > Três hábitos fazem ele funcionar:
 >
