@@ -110,6 +110,29 @@ Passo 8 do `SKILL.md`.
 
 > **Etapa 5 de 5: trazer o que você já tem.** Vou importar suas reuniões das últimas duas semanas e o material que você indicou. Vou processar uma delas com você acompanhando, para você ver como funciona. O resto eu faço em seguida.
 
+### Tutorial: trazer a memória do claude.ai
+
+Oferecer a quem já usa o Claude no navegador. É o atalho mais rápido para o Livup Brain começar sabendo quem a pessoa é.
+
+> Se você já usa o Claude no navegador, ele já aprendeu bastante sobre você. Vamos trazer isso para cá em três passos:
+>
+> 1. Abra https://claude.ai numa conversa nova.
+> 2. Cole esta mensagem e envie:
+>
+>    ```
+>    Liste tudo o que você lembra sobre mim e sobre o meu trabalho: cargo, área, projetos, pessoas com quem trabalho, decisões, preferências e qualquer contexto que você tenha guardado. Organize por tema, em tópicos curtos, e não invente nada que você não tenha registrado.
+>    ```
+>
+> 3. Coloque a resposta na sua inbox. Este é o gesto que você vai repetir todo dia, então vale aprender agora:
+>    - No Obsidian, clique com o botão direito na pasta `00-Inbox` e escolha **Nova nota**.
+>    - Dê um nome qualquer, por exemplo `memoria claude`.
+>    - Cole a resposta inteira e pronto. Não precisa formatar nem salvar: o Obsidian salva sozinho.
+>    - Me avise aqui quando terminar.
+>
+> Eu leio a nota direto da inbox e uso como ponto de partida, sem mudar uma palavra do que está lá. Tudo o que vier dali entra como "a confirmar", porque é o resumo do Claude sobre você, e não palavra sua. Você valida aos poucos.
+
+Se a pessoa não usa o claude.ai, ou a resposta vier vazia, seguir sem esse passo. Quando ela avisar, conferir que a nota apareceu em `00-Inbox/` e dizer em uma linha que é exatamente assim que qualquer coisa entra no Livup Brain. Se ela travar no Obsidian, aceitar a resposta colada na conversa e salvar na inbox por ela, sem editar.
+
 Ao processar a captura na frente da pessoa, narrar as decisões no formato "isto virou X porque Y", uma linha por decisão. Ao terminar o resto, mostrar números reais: quantas reuniões, notas, pessoas e tarefas.
 
 ## Fechamento

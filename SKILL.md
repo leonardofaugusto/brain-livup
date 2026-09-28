@@ -149,13 +149,13 @@ Combinar com a pessoa o gatilho: ela abre o Claude Code na pasta do vault e digi
 Este passo não é opcional e é o que separa um vault vivo de uma pasta bonita. O vault não nasce vazio: nasce do que a pessoa já tem.
 
 1. **Reuniões recentes.** Trazer pelo tomador de notas as reuniões das últimas duas semanas para `00-Diario/Reunioes/`, uma nota por reunião, como a rotina diária faz. Duas semanas bastam para aparecerem as frentes e as pessoas que se repetem; mais que isso deixa a primeira sessão longa demais.
-2. **Memória do claude.ai.** Se a pessoa já usa o Claude no navegador, conduzir o tutorial da Etapa 5 em `references/onboarding.md`: ela pede ao Claude de lá tudo o que ele lembra dela e cola a resposta, que vira `00-Inbox/AAAA-MM-DD-memoria-claude-ai.md` sem edição. É resumo feito por máquina, não palavra dela: toda afirmação tirada dali entra com `confirmado: false`.
+2. **Memória do claude.ai.** Se a pessoa já usa o Claude no navegador, conduzir o tutorial da Etapa 5 em `references/onboarding.md`: ela pede ao Claude de lá tudo o que ele lembra dela e cria ela mesma uma nota na `00-Inbox/` com a resposta, que é o primeiro uso da inbox. É resumo feito por máquina, não palavra dela: toda afirmação tirada dali entra com `confirmado: false`.
 3. **Material próprio.** Para cada lugar que ela citou na pergunta 2, trazer o que ela indicar: páginas do Notion e documentos do Drive pelos conectores, texto colado ou exportado de bloco de notas e WhatsApp. Cada item entra em `00-Inbox/` sem edição.
-3. **Processar uma captura na frente dela**, dizendo cada decisão em voz alta: o que virou nota atômica, o que virou projeto, o que virou tarefa, o que ficou como a confirmar. Mover o bruto para `00-Sistema/Bruto/AAAA-MM-DD-slug.md` sem alterar uma palavra. A pessoa precisa ver o ciclo inteiro uma vez para confiar que pode despejar sem organizar.
-4. **Processar o resto** pelo mesmo protocolo. Se o volume for grande, processar as reuniões primeiro e deixar o material próprio para o primeiro `/bom-dia`, registrando no `Estado.md` o que ficou na inbox.
-5. **Escrever o `Estado.md`** com as frentes que apareceram nas reuniões e no material, cada uma com a fonte. É a primeira vez que o vault descreve o presente dela, e ela confere.
-6. Devolver as três listas do protocolo: o que foi criado, o que virou proposta esperando confirmação dela, e onde uma fonte contradiz outra.
-7. Fechar a sessão pelo protocolo completo: log do dia, `Estado.md`, notas de projeto tocadas.
+4. **Processar uma captura na frente dela**, dizendo cada decisão em voz alta: o que virou nota atômica, o que virou projeto, o que virou tarefa, o que ficou como a confirmar. Mover o bruto para `00-Sistema/Bruto/AAAA-MM-DD-slug.md` sem alterar uma palavra. A pessoa precisa ver o ciclo inteiro uma vez para confiar que pode despejar sem organizar.
+5. **Processar o resto** pelo mesmo protocolo. Se o volume for grande, processar as reuniões primeiro e deixar o material próprio para o primeiro `/bom-dia`, registrando no `Estado.md` o que ficou na inbox.
+6. **Escrever o `Estado.md`** com as frentes que apareceram nas reuniões e no material, cada uma com a fonte. É a primeira vez que o vault descreve o presente dela, e ela confere.
+7. Devolver as três listas do protocolo: o que foi criado, o que virou proposta esperando confirmação dela, e onde uma fonte contradiz outra.
+8. Fechar a sessão pelo protocolo completo: log do dia, `Estado.md`, notas de projeto tocadas.
 
 ## Passo 9: checklist de aceite
 
