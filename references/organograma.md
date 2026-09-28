@@ -27,7 +27,7 @@ O ramo do dono, a partir do nome dele. Com o nome, o agente acha o nó na árvor
 
 Isso dá entre 5 e 25 pessoas. O resto entra no vault quando aparecer numa captura.
 
-Busca pelo nome: comparar sem acento e sem diferença de maiúscula, porque a base guarda nomes completos em caixa alta ("VICTOR NOGUEIRA DOS SANTOS"). Se o nome casar com mais de uma pessoa, mostrar as opções com cargo e área e perguntar. Se não casar com ninguém, pedir o e-mail.
+Busca pelo nome: comparar sem acento e sem diferença de maiúscula, porque a base guarda nomes completos em caixa alta ("MARIA DA SILVA"). Se o nome casar com mais de uma pessoa, mostrar as opções com cargo e área e perguntar. Se não casar com ninguém, pedir o e-mail.
 
 ## Como puxar
 
