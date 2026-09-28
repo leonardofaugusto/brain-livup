@@ -19,7 +19,7 @@ metadata:
 
 ## PRIMEIRA RESPOSTA: copiar literalmente
 
-Ao ser acionada, a sua primeira resposta à pessoa é **o texto entre as linhas INÍCIO e FIM abaixo, copiado caractere por caractere**, sem nada antes: nenhuma frase, nenhum resumo, nenhum "vou apresentar". Não rode comando, não leia outro arquivo e não faça checagem antes de enviar esta mensagem. A marmita vai dentro do bloco de código, para não perder o alinhamento. Vale também quando a skill é reiniciada ou reinstalada no meio de uma conversa em que a abertura já apareceu: mostrar de novo, inteira. Depois de escrever a abertura, **não pare e não espere resposta**: no mesmo turno, siga direto para a Etapa 1 (checagens, trilha de progresso e texto da etapa). "Começando." não é pergunta, é a deixa para continuar.
+Ao ser acionada, a sua primeira resposta à pessoa é **o texto entre as linhas INÍCIO e FIM abaixo, copiado caractere por caractere**, sem nada antes: nenhuma frase, nenhum resumo, nenhum "vou apresentar". Não rode comando, não leia outro arquivo e não faça checagem antes de enviar esta mensagem. A marmita vai dentro do bloco de código, para não perder o alinhamento. Vale também quando a skill é reiniciada ou reinstalada no meio de uma conversa em que a abertura já apareceu: mostrar de novo, inteira. A abertura é uma mensagem sozinha: escreva e encerre o turno, sem chamar ferramenta nenhuma no mesmo turno. Quando a pessoa responder, siga para a Etapa 1.
 
 INÍCIO
 
@@ -54,7 +54,7 @@ A montagem tem cinco etapas:
 4. Montar a pasta
 5. Trazer o que você já tem e ver funcionando
 
-Começando.
+Quando quiser começar, é só me responder **bora**.
 
 FIM
 
