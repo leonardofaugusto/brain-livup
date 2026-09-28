@@ -17,6 +17,49 @@ metadata:
   versao: "2026-09-23"
 ---
 
+## PRIMEIRA RESPOSTA: copiar literalmente
+
+Ao ser acionada, a sua primeira resposta à pessoa é **o texto entre as linhas INÍCIO e FIM abaixo, copiado caractere por caractere**, e nada mais: nenhuma frase antes, nenhum resumo, nenhum "vou apresentar". Não rode comando, não leia outro arquivo e não faça checagem antes de enviar esta mensagem. A marmita vai dentro do bloco de código, para não perder o alinhamento. Só depois de enviar, siga para a Etapa 1.
+
+INÍCIO
+
+```
+     _________________________________
+    /                                 \
+   |       L I V U P   B R A I N       |
+    \_________________________________/
+    |  ideias   | reuniões | decisões |
+    |  ~~ ~ ~~  | = = = =  |  [x] [x] |
+    |  ~ ~~ ~   | = = =    |  [x] [ ] |
+    '---------------------------------'
+       comida de verdade pra cabeça
+```
+
+O Livup Brain transforma o Claude no seu agente pessoal de trabalho. Ele ganha uma pasta no seu computador onde guarda o que acontece no seu dia: reuniões, anotações, decisões, pessoas. Antes de responder, ele lê essa pasta. Depois de cada conversa, ele atualiza.
+
+**Você pensa, ele amplifica.** Ele conhece seus projetos, suas pessoas e o que já foi decidido, então a conversa começa do ponto em que você está, e não do zero.
+
+**Você fala, ele anota.** Reunião gravada, ideia solta, ata colada: ele separa o que é decisão, tarefa e contexto, e guarda cada coisa no lugar certo.
+
+**Seu dia começa sempre pronto com o `/bom-dia`.** Ele traz as reuniões de ontem, monta a agenda de hoje e diz o que precisa de você.
+
+Duas regras de segurança: o que você escreve nunca é reescrito por ele, e o que ele deduz fica marcado como dedução até você confirmar. Tudo fica no seu computador.
+
+A montagem tem cinco etapas:
+
+1. Preparar a máquina
+2. Te conhecer (duas perguntas)
+3. Conectar suas reuniões e sua equipe
+4. Montar a pasta
+5. Trazer o que você já tem e ver funcionando
+
+Começando.
+
+FIM
+
+Se houver sinal de outro Livup Brain na máquina (outra pasta com `CLAUDE.md` e `00-Sistema/Estado.md`, ou a skill `bom-dia` já instalada), perguntar só depois da abertura, numa linha: "Encontrei um Livup Brain em `<caminho>`. Quer continuar nele ou começar um novo aqui?"
+
+
 # Livup Brain: memória pessoal operada pelo Claude
 
 Um vault por pessoa, na máquina dela. O que esta skill instala é um **sistema de memória**, não um conteúdo: quem escreve o quê, o que nunca pode ser reescrito, o que o agente lê antes de responder, o que ele escreve antes de encerrar, e a rotina que transforma captura bruta em contexto todo dia.
@@ -27,7 +70,7 @@ A skill chega vazia de propósito. Área, projetos, pessoas e vocabulário da pe
 
 ## Como conduzir
 
-**Primeira ação, antes de qualquer outra: ler `references/onboarding.md` e mostrar a abertura dele literalmente, com a marmita, como primeira mensagem.** Nenhum comando roda antes disso. Depois, a pessoa vive a montagem como um onboarding em cinco etapas: marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso.
+Depois da abertura literal do topo deste arquivo, a pessoa vive a montagem como um onboarding em cinco etapas, com o roteiro de `references/onboarding.md`: marcador `Etapa N de 5` em cada etapa, checagem técnica em silêncio quando passa, e fechamento com números reais e os três hábitos de uso.
 
 | Etapa do onboarding | Passos abaixo |
 |---|---|

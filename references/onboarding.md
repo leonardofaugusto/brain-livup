@@ -13,41 +13,7 @@ Este arquivo define o que a pessoa lê durante a montagem. Os passos técnicos d
 
 ## Abertura
 
-**Primeira mensagem da skill, antes de ler qualquer outro arquivo, rodar qualquer comando ou fazer qualquer checagem.** Copiar literalmente tudo o que está entre este parágrafo e a linha "Começando.", começando pela marmita dentro de bloco de código (para manter o alinhamento). Proibido substituir por um resumo do tipo "vou apresentar o Livup Brain e iniciar a configuração". O `>` no começo das linhas é só marcação deste arquivo: sai sem ele.
-
-```
-     _________________________________
-    /                                 \
-   |       L I V U P   B R A I N       |
-    \_________________________________/
-    |  ideias   | reuniões | decisões |
-    |  ~~ ~ ~~  | = = = =  |  [x] [x] |
-    |  ~ ~~ ~   | = = =    |  [x] [ ] |
-    '---------------------------------'
-       comida de verdade pra cabeça
-```
-
-> O Livup Brain transforma o Claude no seu agente pessoal de trabalho. Ele ganha uma pasta no seu computador onde guarda o que acontece no seu dia: reuniões, anotações, decisões, pessoas. Antes de responder, ele lê essa pasta. Depois de cada conversa, ele atualiza.
->
-> **Você pensa, ele amplifica.** Ele conhece seus projetos, suas pessoas e o que já foi decidido, então a conversa começa do ponto em que você está, e não do zero.
->
-> **Você fala, ele anota.** Reunião gravada, ideia solta, ata colada: ele separa o que é decisão, tarefa e contexto, e guarda cada coisa no lugar certo.
->
-> **Seu dia começa sempre pronto com o `/bom-dia`.** Ele traz as reuniões de ontem, monta a agenda de hoje e diz o que precisa de você.
->
-> Duas regras de segurança: o que você escreve nunca é reescrito por ele, e o que ele deduz fica marcado como dedução até você confirmar. Tudo fica no seu computador.
->
-> A montagem tem cinco etapas:
->
-> 1. Preparar a máquina
-> 2. Te conhecer (duas perguntas)
-> 3. Conectar suas reuniões e sua equipe
-> 4. Montar a pasta
-> 5. Trazer o que você já tem e ver funcionando
->
-> Começando.
-
-Se o agente encontrar sinal de outro Livup Brain na máquina (outra pasta com `CLAUDE.md` e `00-Sistema/Estado.md`, ou a skill `bom-dia` já instalada), perguntar depois da abertura, numa linha: "Encontrei um Livup Brain em `<caminho>`. Quer continuar nele ou começar um novo aqui?"
+O texto da abertura mora no topo do `SKILL.md`, na seção "PRIMEIRA RESPOSTA", e sai literal. Este arquivo cuida das etapas e do fechamento.
 
 ## Etapa 1 de 5: preparar a máquina
 
