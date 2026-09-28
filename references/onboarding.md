@@ -27,8 +27,6 @@ Mostrar antes de qualquer checagem, numa mensagem só, começando pela marmita d
        comida de verdade pra cabeça
 ```
 
-> Hoje o Claude é bom de conversa e ruim de memória: cada sessão começa do zero, e é você quem explica de novo quem é quem, o que foi decidido e o que ficou pendente.
->
 > O Livup Brain transforma o Claude no seu agente pessoal de trabalho. Ele ganha uma pasta no seu computador onde guarda o que acontece no seu dia: reuniões, anotações, decisões, pessoas. Antes de responder, ele lê essa pasta. Depois de cada conversa, ele atualiza.
 >
 > **Você pensa, ele amplifica.** Ele conhece seus projetos, suas pessoas e o que já foi decidido, então a conversa começa do ponto em que você está, e não do zero.
